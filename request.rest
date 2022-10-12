@@ -1,0 +1,23 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username": "jojo",
+    "email": "jojo@community.com",
+    "password": "ok_hand05"
+}
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "jojo@community.com",
+    "password": "ok_hand05"
+}
+###
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+    "email": "coucou@hello.com"
+}
